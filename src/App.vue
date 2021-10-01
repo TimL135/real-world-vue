@@ -1,11 +1,15 @@
 <template>
   <div id="nav">
-    <router-link to="{name:'EventList'}">Events</router-link> |
-    <router-link to="{name:'About'}">About</router-link>
+    <router-link :to="{ name: 'EventList' }">Events</router-link> |
+    <router-link :to="{ name: 'About' }">About</router-link>
   </div>
   <router-view />
 </template>
-
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
+  });
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
